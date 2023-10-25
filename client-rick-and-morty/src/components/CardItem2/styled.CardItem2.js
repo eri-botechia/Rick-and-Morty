@@ -12,7 +12,7 @@ export const ItemCard2 = styled.li`
   margin: 30px auto;
   border-radius: 33px;
   padding: 1rem;
-
+  color: black;
 
 
 li img{
@@ -35,12 +35,21 @@ h1{
 
 export const ModalCardItem2 = styled.section`
 position: fixed;
+display: inline-block;
 top: 20vh;
 bottom: 20vh;
 right: 5%;
 left: 5%;
 background: whitesmoke;
-border: 2px dashed greeenyellow;
+border: 2px dashed greenyellow;
 border-radius: 22px;
-z-indexs: 11;
+z-index: 11;
+button{
+  margin-bottom: -400px;
+  margin-left: 100px;
+}
+ul li{
+  width: 90%;
+  height: 90%;
+}
 `
