@@ -13,12 +13,13 @@ export function LocationPage (){
       <header>
       <h1>LOCATIONS</h1>
       </header>   
-      <main></main>
+      <main>
       <section><ul>  
       {location.map((local)=>(
         <CardItem1 as="li" key={local.id} local={local}/>
       ))}
       </ul></section>
+</main>
     </LocationComponent>
   )
 }

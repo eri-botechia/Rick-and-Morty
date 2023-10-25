@@ -26,23 +26,21 @@ const hiddenModal = (e)=>{
           <button onClick={showModal}>{character.name}</button>
         ):
         (<ModalCardItem2>
-          <h2>{character.name}</h2>
+       
 
-          <table>
-            <thead>
-              <tr>
-                <td>{character.name}</td>
-                <td>#{character.id}</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{character.id}</td>
-                <td>{character.name}</td>
-              </tr>
-              </tbody>
-           </table> 
-
+<div className="d-flex">
+  <div className='col-sm-12 col-md-6 col-lg-6'>
+    <img src={character.image}/>
+  </div>
+  <div className='col-sm-12 col-md-6 col-lg-6'>
+    <h2>{character.name}</h2>
+    <ul>
+      <li>ID #0{character.id}</li>
+      <li>{character.species}</li>
+      <li>{character.gender}</li>
+    </ul>
+  </div>
+</div>
 
             <button onClick={hiddenModal}>VOLTAR A PERSONAGEMS</button>
         </ModalCardItem2>)
